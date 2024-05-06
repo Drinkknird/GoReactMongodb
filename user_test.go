@@ -13,6 +13,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+//เสร็จทดสอบของ CreateUser
 // Database interface สำหรับฐานข้อมูล MongoDB
 type Database interface {
 	InsertOne(ctx context.Context, document interface{}, opts ...*options.InsertOneOptions) (*mongo.InsertOneResult, error)
